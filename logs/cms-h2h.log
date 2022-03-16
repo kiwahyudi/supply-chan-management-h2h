@@ -1,0 +1,697 @@
+2022-03-11 16:08:56.728  INFO 3628 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Starting ScmH2HApplication using Java 1.8.0_201 on DESKTOP-474CNID with PID 3628 (D:\BANK BSI\kiworkspace\supply-chan-management-h2h\target\classes started by ITD in D:\BANK BSI\kiworkspace\supply-chan-management-h2h)
+2022-03-11 16:08:56.738  INFO 3628 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : No active profile set, falling back to default profiles: default
+2022-03-11 16:08:57.618  INFO 3628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-11 16:08:57.683  INFO 3628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2022-03-11 16:08:58.936  INFO 3628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9012 (http)
+2022-03-11 16:08:58.947  INFO 3628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-11 16:08:58.947  INFO 3628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-03-11 16:08:59.075  INFO 3628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-11 16:08:59.075  INFO 3628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2262 ms
+2022-03-11 16:08:59.369  INFO 3628 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-11 16:08:59.515  INFO 3628 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-03-11 16:08:59.692  INFO 3628 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-11 16:08:59.809  INFO 3628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-11 16:09:00.492  INFO 3628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-11 16:09:00.526  INFO 3628 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL92Dialect
+2022-03-11 16:09:11.148  INFO 3628 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-11 16:09:11.159  INFO 3628 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-11 16:09:12.630  WARN 3628 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-11 16:09:13.245  INFO 3628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9012 (http) with context path ''
+2022-03-11 16:09:13.260  INFO 3628 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Started ScmH2HApplication in 17.081 seconds (JVM running for 17.531)
+2022-03-11 16:09:44.992  INFO 3628 --- [http-nio-9012-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-11 16:09:44.993  INFO 3628 --- [http-nio-9012-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-11 16:09:44.997  INFO 3628 --- [http-nio-9012-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-11 16:09:45.197  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:09:45.197  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:09:45.197  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:09:45.198  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:09:45.198  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:09:45.198  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : 2D02D683F2E29BA63642EA1AA90B5F8B7BF6DC0A9878D967BD88353C9F48060115C4D23CC7618FA271FD0DBD93CC70D380A9C33CDA165F1420E07BF76E5A0DA1
+2022-03-11 16:09:45.220  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"2021123290000000001"},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:09:45.220  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:09:45.221  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:09:45.558  INFO 3628 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [ERROR] {"error":{"errorCode":"999","errorMessage":"Authorization failed1"},"responseMsg":"processed failed!","responseCode":"001"}
+2022-03-11 16:10:26.015  INFO 24504 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Starting ScmH2HApplication using Java 1.8.0_201 on DESKTOP-474CNID with PID 24504 (D:\BANK BSI\kiworkspace\supply-chan-management-h2h\target\classes started by ITD in D:\BANK BSI\kiworkspace\supply-chan-management-h2h)
+2022-03-11 16:10:26.019  INFO 24504 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : No active profile set, falling back to default profiles: default
+2022-03-11 16:10:26.762  INFO 24504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-11 16:10:26.840  INFO 24504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2022-03-11 16:10:27.580  INFO 24504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9012 (http)
+2022-03-11 16:10:27.599  INFO 24504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-11 16:10:27.599  INFO 24504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-03-11 16:10:27.720  INFO 24504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-11 16:10:27.720  INFO 24504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2022-03-11 16:10:27.969  INFO 24504 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-11 16:10:28.090  INFO 24504 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-03-11 16:10:28.248  INFO 24504 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-11 16:10:28.385  INFO 24504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-11 16:10:28.513  INFO 24504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-11 16:10:28.548  INFO 24504 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-11 16:10:29.328  INFO 24504 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-11 16:10:29.338  INFO 24504 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-11 16:10:30.725  WARN 24504 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-11 16:10:31.309  INFO 24504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9012 (http) with context path ''
+2022-03-11 16:10:31.321  INFO 24504 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Started ScmH2HApplication in 5.818 seconds (JVM running for 6.338)
+2022-03-11 16:10:36.713  INFO 24504 --- [http-nio-9012-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-11 16:10:36.713  INFO 24504 --- [http-nio-9012-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-11 16:10:36.715  INFO 24504 --- [http-nio-9012-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-11 16:10:36.856  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:10:36.856  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:10:36.856  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:10:36.856  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:10:36.856  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:10:36.856  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : 2D02D683F2E29BA63642EA1AA90B5F8B7BF6DC0A9878D967BD88353C9F48060115C4D23CC7618FA271FD0DBD93CC70D380A9C33CDA165F1420E07BF76E5A0DA1
+2022-03-11 16:10:36.874  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"2021123290000000001"},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:10:36.875  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:10:36.875  INFO 24504 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:10:36.955  INFO 24504 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : ----------------------------------LOGGER OUT START----------------------------------------------------------------------- 
+2022-03-11 16:10:36.955  INFO 24504 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [Url]           : http://localhost:8889/api/dvc/simulator/sendInvoiceDF
+2022-03-11 16:10:36.955  INFO 24504 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [accessTime]    : 1575969667556
+2022-03-11 16:10:36.955  INFO 24504 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [applicationId] : ALE21
+2022-03-11 16:10:36.955  INFO 24504 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [authSignature] : D14D28E23FE7870108636C1A2BE19530697E274FC83D6D5C8B0E55CF09B17AF452A872944103674A60F0A70E79217F4F4808DCAA74CBA408AA13774AC3B38C6
+2022-03-11 16:10:36.956  INFO 24504 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [REQUEST]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"DVC_202203113391606588"},"requestData":{"actionType":"01","invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:10:41.101 ERROR 24504 --- [http-nio-9012-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8889/api/dvc/simulator/sendInvoiceDF": Connect to localhost:8889 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8889 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect] with root cause
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_201]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_201]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_201]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_201]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_201]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.jar:4.5]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:437) ~[spring-web-5.3.9.jar:5.3.9]
+	at id.co.bsi.scm.h2h.api.servicesimpl.ApiConsumeServiceImpl.postService(ApiConsumeServiceImpl.java:108) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.servicesimpl.AutenticationUserServiceImpl.validateHeader(AutenticationUserServiceImpl.java:136) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.controllers.ScmH2HController.sendInvoice(ScmH2HController.java:40) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2022-03-11 16:11:01.826  INFO 15216 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Starting ScmH2HApplication using Java 1.8.0_201 on DESKTOP-474CNID with PID 15216 (D:\BANK BSI\kiworkspace\supply-chan-management-h2h\target\classes started by ITD in D:\BANK BSI\kiworkspace\supply-chan-management-h2h)
+2022-03-11 16:11:01.833  INFO 15216 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : No active profile set, falling back to default profiles: default
+2022-03-11 16:11:03.327  INFO 15216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-11 16:11:03.438  INFO 15216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2022-03-11 16:11:04.528  INFO 15216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9012 (http)
+2022-03-11 16:11:04.549  INFO 15216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-11 16:11:04.550  INFO 15216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-03-11 16:11:04.706  INFO 15216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-11 16:11:04.707  INFO 15216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2708 ms
+2022-03-11 16:11:05.195  INFO 15216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-11 16:11:05.331  INFO 15216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-03-11 16:11:05.690  INFO 15216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-11 16:11:05.967  INFO 15216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-11 16:11:06.236  INFO 15216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-11 16:11:06.330  INFO 15216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-11 16:11:07.997  INFO 15216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-11 16:11:08.029  INFO 15216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-11 16:11:10.634  WARN 15216 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-11 16:11:11.493  INFO 15216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9012 (http) with context path ''
+2022-03-11 16:11:11.506  INFO 15216 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Started ScmH2HApplication in 10.734 seconds (JVM running for 12.02)
+2022-03-11 16:11:29.323  INFO 15216 --- [http-nio-9012-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-11 16:11:29.323  INFO 15216 --- [http-nio-9012-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-11 16:11:29.328  INFO 15216 --- [http-nio-9012-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-03-11 16:11:35.462  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:11:35.462  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:11:35.462  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:11:35.462  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:11:35.462  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:11:35.462  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : 2D02D683F2E29BA63642EA1AA90B5F8B7BF6DC0A9878D967BD88353C9F48060115C4D23CC7618FA271FD0DBD93CC70D380A9C33CDA165F1420E07BF76E5A0DA1
+2022-03-11 16:11:35.500  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"2021123290000000001"},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:11:35.500  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:11:35.500  INFO 15216 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:11:38.153  INFO 15216 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : ----------------------------------LOGGER OUT START----------------------------------------------------------------------- 
+2022-03-11 16:11:38.153  INFO 15216 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [Url]           : http://localhost:8889/api/dvc/simulator/sendInvoiceDF
+2022-03-11 16:11:38.153  INFO 15216 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [accessTime]    : 1575969667556
+2022-03-11 16:11:38.154  INFO 15216 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [applicationId] : ALE21
+2022-03-11 16:11:38.155  INFO 15216 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [authSignature] : C3E6079F5ED7EFEAC44ED1B79D4A8E517C7D706C5131AC65C80B3DC16F33B649202EB8B0C1E36A0F0BE4367DC1AC8C0390C758079ADFE90FC61A0D0C33601D33
+2022-03-11 16:11:38.157  INFO 15216 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [REQUEST]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"DVC_202203114714478958"},"requestData":{"actionType":"01","invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:11:42.589 ERROR 15216 --- [http-nio-9012-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8889/api/dvc/simulator/sendInvoiceDF": Connect to localhost:8889 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8889 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect] with root cause
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_201]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_201]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_201]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_201]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_201]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.jar:4.5]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:437) ~[spring-web-5.3.9.jar:5.3.9]
+	at id.co.bsi.scm.h2h.api.servicesimpl.ApiConsumeServiceImpl.postService(ApiConsumeServiceImpl.java:108) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.servicesimpl.AutenticationUserServiceImpl.validateHeader(AutenticationUserServiceImpl.java:136) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.controllers.ScmH2HController.sendInvoice(ScmH2HController.java:40) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2022-03-11 16:13:21.881  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:13:21.888  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:13:21.893  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:13:21.898  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:13:21.903  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:13:21.908  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : 2D02D683F2E29BA63642EA1AA90B5F8B7BF6DC0A9878D967BD88353C9F48060115C4D23CC7618FA271FD0DBD93CC70D380A9C33CDA165F1420E07BF76E5A0DA1
+2022-03-11 16:13:21.917  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"2021123290000000001"},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:13:21.923  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:13:21.928  INFO 15216 --- [http-nio-9012-exec-4] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:13:44.359  INFO 15216 --- [http-nio-9012-exec-4] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : ----------------------------------LOGGER OUT START----------------------------------------------------------------------- 
+2022-03-11 16:13:44.595  INFO 15216 --- [http-nio-9012-exec-4] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [Url]           : http://localhost:8889/api/dvc/simulator/sendInvoiceDF
+2022-03-11 16:13:44.819  INFO 15216 --- [http-nio-9012-exec-4] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [accessTime]    : 1575969667556
+2022-03-11 16:13:45.022  INFO 15216 --- [http-nio-9012-exec-4] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [applicationId] : ALE21
+2022-03-11 16:13:45.224  INFO 15216 --- [http-nio-9012-exec-4] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [authSignature] : CFEABABD50C9E7288DFAC202A25CEE2227DEF853B78273595DFC0F50BFE7F1325D21DC1A4213F86DCD2355701314E8B92A105EBD8D62E665B69EF01CADEC6766
+2022-03-11 16:13:45.548  INFO 15216 --- [http-nio-9012-exec-4] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [REQUEST]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"DVC_202203117125144302"},"requestData":{"actionType":"01","invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:14:05.879 ERROR 15216 --- [http-nio-9012-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8889/api/dvc/simulator/sendInvoiceDF": Connect to localhost:8889 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8889 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect] with root cause
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_201]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_201]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_201]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_201]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_201]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_201]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.jar:4.5]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:437) ~[spring-web-5.3.9.jar:5.3.9]
+	at id.co.bsi.scm.h2h.api.servicesimpl.ApiConsumeServiceImpl.postService(ApiConsumeServiceImpl.java:107) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.servicesimpl.AutenticationUserServiceImpl.validateHeader(AutenticationUserServiceImpl.java:136) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.controllers.ScmH2HController.sendInvoice(ScmH2HController.java:40) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2022-03-11 16:22:29.195  INFO 22016 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Starting ScmH2HApplication using Java 1.8.0_201 on DESKTOP-474CNID with PID 22016 (D:\BANK BSI\kiworkspace\supply-chan-management-h2h\target\classes started by ITD in D:\BANK BSI\kiworkspace\supply-chan-management-h2h)
+2022-03-11 16:22:29.201  INFO 22016 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : No active profile set, falling back to default profiles: default
+2022-03-11 16:22:30.310  INFO 22016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-11 16:22:30.397  INFO 22016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2022-03-11 16:22:31.452  INFO 22016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9012 (http)
+2022-03-11 16:22:31.474  INFO 22016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-11 16:22:31.474  INFO 22016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-03-11 16:22:31.626  INFO 22016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-11 16:22:31.626  INFO 22016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2323 ms
+2022-03-11 16:22:32.088  INFO 22016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-11 16:22:32.210  INFO 22016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-03-11 16:22:32.490  INFO 22016 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-11 16:22:32.725  INFO 22016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-11 16:22:33.740  INFO 22016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-11 16:22:33.807  INFO 22016 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL92Dialect
+2022-03-11 16:22:46.248  INFO 22016 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-11 16:22:46.270  INFO 22016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-11 16:22:48.413  WARN 22016 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-11 16:22:49.315  INFO 22016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9012 (http) with context path ''
+2022-03-11 16:22:49.329  INFO 22016 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Started ScmH2HApplication in 20.951 seconds (JVM running for 21.835)
+2022-03-11 16:22:49.653  INFO 22016 --- [http-nio-9012-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-11 16:22:49.653  INFO 22016 --- [http-nio-9012-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-11 16:22:49.656  INFO 22016 --- [http-nio-9012-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-03-11 16:22:49.926  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:22:49.926  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:22:49.926  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:22:49.926  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:22:49.927  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:22:49.927  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : 2D02D683F2E29BA63642EA1AA90B5F8B7BF6DC0A9878D967BD88353C9F48060115C4D23CC7618FA271FD0DBD93CC70D380A9C33CDA165F1420E07BF76E5A0DA1
+2022-03-11 16:22:49.966  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:22:49.966  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:22:49.966  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:22:50.233  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [ERROR] {"error":{"errorCode":"999","errorMessage":"Authorization failed1"},"responseMsg":"processed failed!","responseCode":"001"}
+2022-03-11 16:23:14.421  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:23:14.421  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:23:14.422  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:23:14.422  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:23:14.422  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:23:14.422  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : B0DC4FD2B51421646D7AEA764A428DB4C27F89DA73E2A98AF1BB8AD68BF770EA69A3B3857D10B3E492B57820175C081AD56CCD829156C6CEAC819E271F619BBB
+2022-03-11 16:23:14.423  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:23:14.424  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:23:14.424  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:23:14.700  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [ERROR] {"error":{"errorCode":"999","errorMessage":"Comcode Null !"},"responseMsg":"processed failed!","responseCode":"001"}
+2022-03-11 16:23:25.991  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:23:25.998  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:23:26.004  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:23:26.011  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:23:26.017  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:23:26.023  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : B0DC4FD2B51421646D7AEA764A428DB4C27F89DA73E2A98AF1BB8AD68BF770EA69A3B3857D10B3E492B57820175C081AD56CCD829156C6CEAC819E271F619BBB
+2022-03-11 16:23:26.030  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:23:26.035  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:23:26.042  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:23:51.608  INFO 22016 --- [http-nio-9012-exec-5] s.h.a.s.SupplyChainManagementServiceImpl : [ERROR] {"error":{"errorCode":"999","errorMessage":"Comcode Null !"},"responseMsg":"processed failed!","responseCode":"001"}
+2022-03-11 16:27:26.142  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:27:26.143  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:27:26.143  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:27:26.143  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:27:26.143  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:27:26.143  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : B0DC4FD2B51421646D7AEA764A428DB4C27F89DA73E2A98AF1BB8AD68BF770EA69A3B3857D10B3E492B57820175C081AD56CCD829156C6CEAC819E271F619BBB
+2022-03-11 16:27:26.144  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:27:26.144  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:27:26.144  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:27:26.435  INFO 22016 --- [http-nio-9012-exec-7] s.h.a.s.SupplyChainManagementServiceImpl : [ERROR] {"error":{"errorCode":"999","errorMessage":"ApplicationId Not Fund !"},"responseMsg":"processed failed!","responseCode":"001"}
+2022-03-11 16:27:39.209  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:27:39.215  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:27:39.221  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:27:39.227  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:27:39.231  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:27:39.236  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : B0DC4FD2B51421646D7AEA764A428DB4C27F89DA73E2A98AF1BB8AD68BF770EA69A3B3857D10B3E492B57820175C081AD56CCD829156C6CEAC819E271F619BBB
+2022-03-11 16:27:39.245  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:27:39.250  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:27:39.256  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:27:44.419  INFO 22016 --- [http-nio-9012-exec-9] s.h.a.s.SupplyChainManagementServiceImpl : [ERROR] {"error":{"errorCode":"999","errorMessage":"ApplicationId Not Fund !"},"responseMsg":"processed failed!","responseCode":"001"}
+2022-03-11 16:28:29.540  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:28:29.541  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:28:29.541  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:28:29.542  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:28:29.542  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:28:29.542  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : B0DC4FD2B51421646D7AEA764A428DB4C27F89DA73E2A98AF1BB8AD68BF770EA69A3B3857D10B3E492B57820175C081AD56CCD829156C6CEAC819E271F619BBB
+2022-03-11 16:28:29.543  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"BF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:28:29.545  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:28:29.545  INFO 22016 --- [http-nio-9012-exec-1] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:28:29.980  INFO 22016 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : ----------------------------------LOGGER OUT START----------------------------------------------------------------------- 
+2022-03-11 16:28:29.980  INFO 22016 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [Url]           : https://10.0.116.58:9443/scm/api/sendInvoice
+2022-03-11 16:28:29.980  INFO 22016 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [accessTime]    : 1575969667556
+2022-03-11 16:28:29.980  INFO 22016 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [applicationId] : ALE21
+2022-03-11 16:28:29.980  INFO 22016 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [authSignature] : AF8CCA27E00097C1F1F58B87CBC1EC33EB0903DFFEC5F029026C8A59380DEF482BFD5A5BB4920DF31FDF9279E3BDCB4C43F1BF49C408F491059EA52532E3BC14
+2022-03-11 16:28:29.982  INFO 22016 --- [http-nio-9012-exec-1] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [REQUEST]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"DVC_202203112573211306"},"requestData":{"productType":"BF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:28:30.408 ERROR 22016 --- [http-nio-9012-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://10.0.116.58:9443/scm/api/sendInvoice": sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target; nested exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target] with root cause
+
+sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141) ~[na:1.8.0_201]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126) ~[na:1.8.0_201]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_201]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392) ~[na:1.8.0_201]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302) ~[na:1.8.0_201]
+	at sun.security.validator.Validator.validate(Validator.java:262) ~[na:1.8.0_201]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_201]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[na:1.8.0_201]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[na:1.8.0_201]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621) ~[na:1.8.0_201]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223) ~[na:1.8.0_201]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037) ~[na:1.8.0_201]
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379) ~[na:1.8.0_201]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.jar:4.5]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:437) ~[spring-web-5.3.9.jar:5.3.9]
+	at id.co.bsi.scm.h2h.api.servicesimpl.ApiConsumeServiceImpl.postService(ApiConsumeServiceImpl.java:107) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.servicesimpl.AutenticationUserServiceImpl.validateHeader(AutenticationUserServiceImpl.java:136) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.controllers.ScmH2HController.sendInvoice(ScmH2HController.java:40) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2022-03-11 16:30:19.496  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:30:19.496  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:30:19.497  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:30:19.497  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:30:19.497  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:30:19.497  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : B0DC4FD2B51421646D7AEA764A428DB4C27F89DA73E2A98AF1BB8AD68BF770EA69A3B3857D10B3E492B57820175C081AD56CCD829156C6CEAC819E271F619BBB
+2022-03-11 16:30:19.497  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:30:19.497  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:30:19.497  INFO 22016 --- [http-nio-9012-exec-3] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:30:19.755  INFO 22016 --- [http-nio-9012-exec-3] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : ----------------------------------LOGGER OUT START----------------------------------------------------------------------- 
+2022-03-11 16:30:19.755  INFO 22016 --- [http-nio-9012-exec-3] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [Url]           : https://10.0.116.58:9443/scm/api/sendInvoice
+2022-03-11 16:30:19.755  INFO 22016 --- [http-nio-9012-exec-3] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [accessTime]    : 1575969667556
+2022-03-11 16:30:19.755  INFO 22016 --- [http-nio-9012-exec-3] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [applicationId] : ALE21
+2022-03-11 16:30:19.755  INFO 22016 --- [http-nio-9012-exec-3] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [authSignature] : C201C9FB6B4B8F911D8BA6521D64A2A4379E3AE8F99AB2475A5BC281F01B3C31D651AD614BB7E86997439F83142BB7BD29C5982DFDFD453263C80B310FCA8561
+2022-03-11 16:30:19.758  INFO 22016 --- [http-nio-9012-exec-3] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [REQUEST]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"DVC_202203115740111276"},"requestData":{"actionType":"01","invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:30:19.866 ERROR 22016 --- [http-nio-9012-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://10.0.116.58:9443/scm/api/sendInvoice": sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target; nested exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target] with root cause
+
+sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141) ~[na:1.8.0_201]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126) ~[na:1.8.0_201]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_201]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392) ~[na:1.8.0_201]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302) ~[na:1.8.0_201]
+	at sun.security.validator.Validator.validate(Validator.java:262) ~[na:1.8.0_201]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_201]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[na:1.8.0_201]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[na:1.8.0_201]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621) ~[na:1.8.0_201]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223) ~[na:1.8.0_201]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037) ~[na:1.8.0_201]
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395) ~[na:1.8.0_201]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379) ~[na:1.8.0_201]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.5.jar:4.5]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.jar:4.5]
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:437) ~[spring-web-5.3.9.jar:5.3.9]
+	at id.co.bsi.scm.h2h.api.servicesimpl.ApiConsumeServiceImpl.postService(ApiConsumeServiceImpl.java:107) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.servicesimpl.AutenticationUserServiceImpl.validateHeader(AutenticationUserServiceImpl.java:136) ~[classes/:na]
+	at id.co.bsi.scm.h2h.api.controllers.ScmH2HController.sendInvoice(ScmH2HController.java:40) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2022-03-11 16:32:06.949  INFO 13364 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Starting ScmH2HApplication using Java 1.8.0_201 on DESKTOP-474CNID with PID 13364 (D:\BANK BSI\kiworkspace\supply-chan-management-h2h\target\classes started by ITD in D:\BANK BSI\kiworkspace\supply-chan-management-h2h)
+2022-03-11 16:32:06.955  INFO 13364 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : No active profile set, falling back to default profiles: default
+2022-03-11 16:32:08.364  INFO 13364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-11 16:32:08.499  INFO 13364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2022-03-11 16:32:09.623  INFO 13364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9012 (http)
+2022-03-11 16:32:09.639  INFO 13364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-11 16:32:09.640  INFO 13364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-03-11 16:32:09.799  INFO 13364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-11 16:32:09.800  INFO 13364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2739 ms
+2022-03-11 16:32:10.287  INFO 13364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-11 16:32:10.413  INFO 13364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-03-11 16:32:10.778  INFO 13364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-11 16:32:11.070  INFO 13364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-11 16:32:11.914  INFO 13364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-11 16:32:11.983  INFO 13364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL92Dialect
+2022-03-11 16:32:21.872  INFO 13364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-11 16:32:21.889  INFO 13364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-11 16:32:23.865  WARN 13364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-11 16:32:24.747  INFO 13364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9012 (http) with context path ''
+2022-03-11 16:32:24.760  INFO 13364 --- [main] id.co.bsi.scm.h2h.api.ScmH2HApplication  : Started ScmH2HApplication in 18.768 seconds (JVM running for 19.746)
+2022-03-11 16:32:45.457  INFO 13364 --- [http-nio-9012-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-11 16:32:45.457  INFO 13364 --- [http-nio-9012-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-11 16:32:45.458  INFO 13364 --- [http-nio-9012-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-11 16:32:45.764  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN START::::::::::::::
+2022-03-11 16:32:45.764  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:32:45.764  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [serviceCode] [in]   : SINV001
+2022-03-11 16:32:45.764  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [accessTime] [in]    : 1575969667556
+2022-03-11 16:32:45.764  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [applicationId] [in] : ALE21
+2022-03-11 16:32:45.764  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [authSignature] [in] : B0DC4FD2B51421646D7AEA764A428DB4C27F89DA73E2A98AF1BB8AD68BF770EA69A3B3857D10B3E492B57820175C081AD56CCD829156C6CEAC819E271F619BBB
+2022-03-11 16:32:45.790  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : [REQUEST] [in]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":""},"requestData":{"productType":"DF","actionType":"01","invoiceAccAmt":12313123,"invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","docType":"sdadaasd","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:32:45.790  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl :  
+2022-03-11 16:32:45.790  INFO 13364 --- [http-nio-9012-exec-2] s.h.a.s.SupplyChainManagementServiceImpl : ::::::::::::::LOGGER IN END::::::::::::::::
+2022-03-11 16:32:46.170  INFO 13364 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : ----------------------------------LOGGER OUT START----------------------------------------------------------------------- 
+2022-03-11 16:32:46.170  INFO 13364 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [Url]           : https://10.0.116.58:9443/scm/api/sendInvoice
+2022-03-11 16:32:46.171  INFO 13364 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [accessTime]    : 1575969667556
+2022-03-11 16:32:46.171  INFO 13364 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [applicationId] : ALE21
+2022-03-11 16:32:46.171  INFO 13364 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [authSignature] : AC48E928446123DFA6AB5BC758BA33BA5A0441B47701262768A4382FFA259728EFC9362DBA7392B193AAC48D6D92C76C714F1FFE806B736B7A78F1C64CBBB7E
+2022-03-11 16:32:46.173  INFO 13364 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [REQUEST]       : {"requestHeader":{"siteCode":"BSIDVC","referenceNo":"DVC_202203116304202793"},"requestData":{"actionType":"01","invoiceAmt":23000,"invoiceCcy":"IDR","invoiceNo":"101","invoiceDate":"2021-12-29","invoiceDueDate":"2022-05-29","document":"BAST.PDF","buyerCode":"BUY01","profileCode":"BSI01","sellerCode":"SEL01","contractNo":"9999999"}}
+2022-03-11 16:32:46.551  INFO 13364 --- [http-nio-9012-exec-2] i.c.b.s.h.a.s.ApiConsumeServiceImpl      : [ERROR] Function postServiceMiddleware : I/O error on POST request for "https://10.0.116.58:9443/scm/api/sendInvoice": sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target; nested exception is javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-03-11 16:32:46.563  WARN 13364 --- [http-nio-9012-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
